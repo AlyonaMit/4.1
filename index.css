@@ -1,0 +1,170 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+img, video, canvas {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: Montserrat, Quattrocento, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.tiny-detail {
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.fancy {
+    font-family: Quattrocento;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.omg-green-text {
+    color: rgba(113, 135, 14, 1);
+}
+
+.tilted {
+    font-style: italic;
+}
+
+.dreamy {
+    font-family: Montserrat;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.85)
+}
+
+.detail {
+    font-family: Montserrat;
+    line-height: 150%;
+}
+
+.color-foxy {
+    color: #CD9A3D;
+}
+
+.color-mossy {
+    color: rgba(113, 135, 14, 0.8);
+}
+
+.line {
+    width: 96px;
+    height: 71px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.readmore-line {
+    display: flex;
+    align-items: flex-end;
+    gap: 31px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-madness {
+    position: relative;
+}
+
+@media all and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .fancy-container {
+        margin-top: 25px;
+        margin-bottom: 26px;
+        margin-right: -3px;
+    }
+
+    .fancy {
+        text-align: center;
+    }
+
+    .line {
+        padding-bottom: 16px;
+    }
+
+    .readmore-line {
+        justify-content: end;
+        margin-bottom: 26px;
+    }
+
+    .position {
+        position: absolute;
+        top: 278px;
+        left: 132px;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .main {
+        display: flex;
+        gap: 96px;
+        flex-grow: 0;
+
+    }
+
+    .fancy-container {
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-bottom: 100px;
+
+    }
+
+    .fancy {
+        font-size: 60px;
+        line-height: 107%;
+    }
+
+    .bold {
+        font-weight: 900;
+    }
+
+    .readmore-line {
+        margin-top: 20px;
+    }
+
+    .line {
+        padding-bottom: 12px;
+    }
+
+    .image-madness {
+        margin-bottom: 75px;
+    }
+
+    .position {
+        position: absolute;
+        top: 208px;
+        left: 343px;
+    }
+}
